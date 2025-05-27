@@ -4,13 +4,17 @@
     "type": "project",
     "require": {
         "composer-runtime-api": "^2.0",
-        "shopware/administration": "*",
-        "shopware/core": "~v6.6.0",
-        "shopware/elasticsearch": "*",
-        "shopware/storefront": "*",
+        "shopware/administration": "dev-pickware-ai/chat-component as v6.6.10.4",
+        "shopware/core": "dev-pickware-ai/chat-component as v6.6.10.4",
+        "shopware/elasticsearch": "dev-pickware-ai/chat-component as v6.6.10.4",
+        "shopware/storefront": "dev-pickware-ai/chat-component as v6.6.10.4",
         "symfony/flex": "~2"
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pickware/shopware-platform-private"
+        },
         {
             "type": "path",
             "url": "custom/plugins/*",
